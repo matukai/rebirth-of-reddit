@@ -4,3 +4,52 @@ body {
 .title{
   text-align: center;
 }
+*{
+  border: 1px solid black;
+}
+
+
+#nav{
+  display: inline;
+}
+.ulNav{
+  margin: auto;
+  text-align: center;
+  list-style-type: none;
+  display: inline-block;
+}
+
+#contentContainer{
+  background-color: white;
+  margin: auto;
+  height: 4000px;
+  width: 1000px;
+  padding: 50px;
+}
+.content{
+  padding: 30px;
+  border: 1px solid blue;
+  height: 300px;
+  width: 450px;
+}
+.imgSub1{
+  height: 200px;
+  width:450px;
+}
+.contentTitle{
+  border: 1px solid green;
+  width: 450px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+}
+.author{
+  font-size: 15px;
+  font-family: 'Oswald', sans-serif;
+  width: 100px;
+}
+.views{
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  width: 100px;
+  float: right;
+}
