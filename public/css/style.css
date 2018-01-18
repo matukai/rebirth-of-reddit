@@ -23,10 +23,10 @@ body {
   padding: 10px; }
 
 * {
-  border: 1px solid #222121; }
+  border: 1px solid #f5f6f6; }
 
 #nav {
-  background-color: #332c2c; }
+  background-color: #444040; }
 
 .ulNav {
   text-align: center;
@@ -34,7 +34,8 @@ body {
 
 .li {
   font-family: 'Oswald', sans-serif;
-  display: inline; }
+  display: inline;
+  color: #817e7e; }
 
 #contentContainer {
   margin: auto;
@@ -45,13 +46,13 @@ body {
   text-align: center; }
 
 .content {
-  margin: 12px;
+  margin: auto;
   display: inline-block;
   border: 1px solid blue;
   background-color: white;
   height: 400px;
   width: 324px;
-  padding: 12px;
+  padding: 10px;
   overflow: hidden; }
 
 .image {
@@ -70,10 +71,14 @@ body {
 
 .views {
   font-family: 'Oswald', sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   width: 50px;
   float: right; }
 
 .description {
-  text-overflow: ellipsis;
-  overflow: hidden; }
+  overflow: hidden;
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px; }
+
+#footer {
+  text-align: center; }

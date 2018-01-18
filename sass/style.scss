@@ -23,10 +23,10 @@ body {
   padding: 10px;
 }
 *{
-  border: 1px solid rgb(34, 33, 33);
+  border: 1px solid rgb(245, 246, 246);
 }
 #nav{
-  background-color: rgb(51, 44, 44);
+  background-color: rgb(68, 64, 64);
 }
 .ulNav{
   text-align: center;
@@ -35,6 +35,8 @@ body {
 .li{
   font-family: 'Oswald', sans-serif;
   display: inline;
+  color: rgb(129, 126, 126);
+
 }
 #contentContainer{
   margin: auto;
@@ -45,13 +47,13 @@ body {
   text-align: center;
 }
 .content{
-  margin: 12px;
+  margin: auto;
   display: inline-block;
   border: 1px solid blue;
   background-color: white;
   height: 400px;
   width: 324px;
-  padding: 12px;
+  padding: 10px;
   overflow: hidden;
 }
 .image{
@@ -70,11 +72,15 @@ body {
 }
 .views{
   font-family: 'Oswald', sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   width: 50px;
   float: right;
 }
 .description{
-  text-overflow: ellipsis;
   overflow: hidden;
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+}
+#footer{
+  text-align: center;
 }
