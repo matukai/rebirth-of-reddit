@@ -1,34 +1,36 @@
 // default
-let topic = 'photoshopbattles';
+let topic = 'hawaii';
 let parentElement = document.getElementById('contentContainer');
 
-
 let topicHawaii = 'hawaii';
-document.getElementById('subHawaii').addEventListener('click', function (event) {
-  event.preventDefault();
-  topic = 'hawaii'
-  let oReq = new XMLHttpRequest();
-  oReq.addEventListener('load', sub1);
-  oReq.open('GET', redditApi + topic + '.json');
-  oReq.send();
-})
+document.getElementById('subHawaii').addEventListener('click', redditApi(topicHawaii));
+
+let photoShopBattles = 'photoshopbattles';
+document.getElementById('subPhotoShopBattles').addEventListener('click', redditApi(photoShopBattles));
+
+let technology = 'technology';
+document.getElementById('technology').addEventListener('click', redditApi(technology));
 
 
 // Reddit API Request
-let redditApi = 'https://www.reddit.com/r/';
-let oReq = new XMLHttpRequest();
-oReq.addEventListener('load', function () {
+function redditApi(topic) {
+  let chosenTopic = topic
+  let redditApi = 'https://www.reddit.com/r/';
+  let oReq = new XMLHttpRequest();
+  oReq.addEventListener('load', function () {
   let fetched = JSON.parse(this.responseText);
   let arr = fetched.data.children;
   cardBuilder(arr, parentElement)
-});
-oReq.open('GET', redditApi + topic + '.json');
-oReq.send();
+  });
+  oReq.open('GET', redditApi + chosenTopic + '.json');
+  oReq.send();
+}
 
 
 function cardBuilder(arr, parentElement) {
 
   let cardContainer = document.createElement('div');
+  cardContainer.className = 'cardContainer';
 
   arr.forEach(function (element, index, array) {
 
@@ -62,7 +64,7 @@ function cardBuilder(arr, parentElement) {
     let description = document.createElement('div');
     description.className = 'description';
     content.appendChild(description);
-    console.log(element.data.selftext);
+    //console.log(element.data.selftext);
     let selfText = element.data.selftext;
     if (selfText === "") {
       description.innerHTML = 'No Description';
@@ -74,3 +76,5 @@ function cardBuilder(arr, parentElement) {
   parentElement.innerHTML = '';
   parentElement.appendChild(cardContainer);
 }
+
+

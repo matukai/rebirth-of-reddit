@@ -9,7 +9,11 @@ body {
   background-image: url('/assets/bg.jpg');
 }
 #header{
-  background-image: '/assets/header_bg.svg'
+  padding: 30px;
+  background-image: url('../assets/logo.svg');
+  background-color: white;
+  background-repeat: no-repeat;
+  margin: auto;
 }
 .title{
   text-align: center;
@@ -21,8 +25,10 @@ body {
 *{
   border: 1px solid rgb(34, 33, 33);
 }
-.ulNav{
+#nav{
   background-color: rgb(51, 44, 44);
+}
+.ulNav{
   text-align: center;
   list-style-type: none;
 }
@@ -35,15 +41,22 @@ body {
   width: 1000px;
   padding: 50px;
 }
+.cardContainer{
+  text-align: center;
+}
 .content{
+  margin: 12px;
+  display: inline-block;
   border: 1px solid blue;
+  background-color: white;
   height: 400px;
   width: 324px;
   padding: 12px;
+  overflow: hidden;
 }
 .image{
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 275px;
+  max-height: 167px;
 }
 .contentTitle{
   border: 1px solid green;
@@ -62,5 +75,6 @@ body {
   float: right;
 }
 .description{
-
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
