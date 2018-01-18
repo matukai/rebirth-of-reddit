@@ -1,55 +1,66 @@
+html, body{
+  box-sizing: border-box;
+}
+*{
+  box-sizing: inherit;
+}
 body {
+  margin: 0px;
   background-image: url('/assets/bg.jpg');
+}
+#header{
+  background-image: '/assets/header_bg.svg'
 }
 .title{
   text-align: center;
+  font-family: 'Oswald', sans-serif;
+  background-color: white;
+  height: 75px;
+  padding: 10px;
 }
 *{
-  border: 1px solid black;
-}
-
-
-#nav{
-  display: inline;
+  border: 1px solid rgb(34, 33, 33);
 }
 .ulNav{
-  margin: auto;
+  background-color: rgb(51, 44, 44);
   text-align: center;
   list-style-type: none;
-  display: inline-block;
 }
-
+.li{
+  font-family: 'Oswald', sans-serif;
+  display: inline;
+}
 #contentContainer{
-  background-color: white;
   margin: auto;
-  height: 4000px;
   width: 1000px;
   padding: 50px;
 }
 .content{
-  padding: 30px;
   border: 1px solid blue;
-  height: 300px;
-  width: 450px;
+  height: 400px;
+  width: 324px;
+  padding: 12px;
 }
-.imgSub1{
-  height: 200px;
-  width:450px;
+.image{
+  max-width: 100%;
+  max-height: 100%;
 }
 .contentTitle{
   border: 1px solid green;
-  width: 450px;
   font-family: 'Oswald', sans-serif;
-  font-size: 30px;
+  font-size: 15px;
 }
 .author{
-  font-size: 15px;
+  font-size: 10px;
   font-family: 'Oswald', sans-serif;
   width: 100px;
 }
 .views{
   font-family: 'Oswald', sans-serif;
-  font-size: 15px;
-  width: 100px;
+  font-size: 12px;
+  width: 50px;
   float: right;
+}
+.description{
+
 }
