@@ -13,30 +13,35 @@ body {
   background-image: url('../assets/logo.svg');
   background-color: white;
   background-repeat: no-repeat;
-  margin: auto;
+  background-position: center;
 }
 .title{
   text-align: center;
   font-family: 'Oswald', sans-serif;
-  background-color: white;
   height: 75px;
   padding: 10px;
 }
-*{
-  border: 1px solid rgb(245, 246, 246);
-}
+
 #nav{
   background-color: rgb(68, 64, 64);
 }
 .ulNav{
   text-align: center;
   list-style-type: none;
+  margin: 0px;
+  padding: 0.5rem;
+
 }
 .li{
   font-family: 'Oswald', sans-serif;
   display: inline;
   color: rgb(129, 126, 126);
+  padding-right: 1rem;
 
+}
+.li:hover{
+  transition: background-color .5s;
+  color: rgb(218, 130, 15);
 }
 #contentContainer{
   margin: auto;
@@ -47,21 +52,23 @@ body {
   text-align: center;
 }
 .content{
-  margin: auto;
+  margin: 12px;
   display: inline-block;
-  border: 1px solid blue;
   background-color: white;
   height: 400px;
   width: 324px;
   padding: 10px;
   overflow: hidden;
 }
+.content:hover{
+  transition: background-color .5s;
+  border: 7px solid rgb(218, 130, 15);
+}
 .image{
   max-width: 275px;
   max-height: 167px;
 }
 .contentTitle{
-  border: 1px solid green;
   font-family: 'Oswald', sans-serif;
   font-size: 15px;
 }
@@ -83,4 +90,35 @@ body {
 }
 #footer{
   text-align: center;
+}
+#facebook:hover{
+  background: blue;
+}
+#instagram:hover{
+  background: rgb(255, 147, 5);
+}
+
+@media screen and(max-width: 480px){
+  body{
+    width: 100%;
+  }
+  .cardContainer{
+    height: 100%;
+    width: 450px;
+  }
+  .image{
+    height: 250px;
+    width: 408px;
+  }
+  #contentContainer{
+    padding: 0px;
+    width: auto;
+  }
+  .content{
+    width: 438px;
+    margin-bottom: 8px;
+  }
+  #header{
+    background-position: left;
+  }
 }

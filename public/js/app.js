@@ -28,8 +28,8 @@ document.getElementById('technology').addEventListener('click', function () {
 document.getElementById('random').addEventListener('click', randomSelect);
 
 function randomSelect() {
-  let arr = ['beamazed', 'confession', 'TalesFromYourServer', 'thettruthishere', 'Glitch_in_the_Matrix'];
-  let index = Math.floor(Math.random() * 5);
+  let arr = ['beamazed', 'confession', 'TalesFromYourServer', 'thettruthishere', 'Glitch_in_the_Matrix', 'aww', 'tinder', 'MrRobot'];
+  let index = Math.floor(Math.random() * 8);
   topic = arr[index];
   console.log(topic)
   return redditApi(topic);

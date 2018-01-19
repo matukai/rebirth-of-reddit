@@ -13,29 +13,32 @@ body {
   background-image: url("../assets/logo.svg");
   background-color: white;
   background-repeat: no-repeat;
-  margin: auto; }
+  background-position: center; }
 
 .title {
   text-align: center;
   font-family: 'Oswald', sans-serif;
-  background-color: white;
   height: 75px;
   padding: 10px; }
-
-* {
-  border: 1px solid #f5f6f6; }
 
 #nav {
   background-color: #444040; }
 
 .ulNav {
   text-align: center;
-  list-style-type: none; }
+  list-style-type: none;
+  margin: 0px;
+  padding: 0.5rem; }
 
 .li {
   font-family: 'Oswald', sans-serif;
   display: inline;
-  color: #817e7e; }
+  color: #817e7e;
+  padding-right: 1rem; }
+
+.li:hover {
+  transition: background-color .5s;
+  color: #da820f; }
 
 #contentContainer {
   margin: auto;
@@ -46,21 +49,23 @@ body {
   text-align: center; }
 
 .content {
-  margin: auto;
+  margin: 12px;
   display: inline-block;
-  border: 1px solid blue;
   background-color: white;
   height: 400px;
   width: 324px;
   padding: 10px;
   overflow: hidden; }
 
+.content:hover {
+  transition: background-color .5s;
+  border: 7px solid #da820f; }
+
 .image {
   max-width: 275px;
   max-height: 167px; }
 
 .contentTitle {
-  border: 1px solid green;
   font-family: 'Oswald', sans-serif;
   font-size: 15px; }
 
@@ -82,3 +87,27 @@ body {
 
 #footer {
   text-align: center; }
+
+#facebook:hover {
+  background: blue; }
+
+#instagram:hover {
+  background: #ff9305; }
+
+@media screen and (max-width: 480px) {
+  body {
+    width: 100%; }
+  .cardContainer {
+    height: 100%;
+    width: 450px; }
+  .image {
+    height: 250px;
+    width: 408px; }
+  #contentContainer {
+    padding: 0px;
+    width: auto; }
+  .content {
+    width: 438px;
+    margin-bottom: 8px; }
+  #header {
+    background-position: left; } }
